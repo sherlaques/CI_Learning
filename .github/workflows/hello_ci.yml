@@ -1,0 +1,12 @@
+name: Hello CI
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubantu-latest
+    
+      steps:
+          -name: Says hello
+           run: echo "Hello from GitHub Actions!"
