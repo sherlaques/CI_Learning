@@ -1,23 +1,23 @@
 name: Hello CI
 
 on:
-push:
+  push:
 
 jobs:
-hello:
-runs-on: ubuntu-latest
+  hello:
+    runs-on: ubuntu-latest
 
-steps:
-- name: Say hello
-run: echo "Hello from GitHub Actions!"
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions!"
 
-- name: Show machine information
-run: |
-echo "Operating System:"
-uname -a
+      - name: Show machine information
+        run: |
+          echo "Operating System:"
+          uname -a
 
-echo "CPU architecture:"
-uname -m
+          echo "CPU architecture:"
+          uname -m
 
-echo "CPU information:"
-lscpu | head -15
+          echo "CPU information:"
+          lscpu | head -15
