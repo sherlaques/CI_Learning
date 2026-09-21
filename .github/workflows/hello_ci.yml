@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Says hello
-        run: this_command_does_not_exist
+        run: echo "Hello from the GitHub"
